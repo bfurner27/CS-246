@@ -1,0 +1,43 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package insightjournal;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Benjamin
+ */
+public class Reference {
+
+    private ArrayList<Book> books;
+    private ArrayList<Topic> topics;
+    private Date date;
+    
+    public Reference () {
+        
+    }
+    
+    public Reference (ArrayList<Book> theBooks,ArrayList<Topic> theTopics, 
+                Date theDate) {
+        books = theBooks;
+        topics = theTopics;
+        date = theDate;
+    }
+    
+    public ArrayList<Book> getScriptures() {
+        return books;  
+    }
+    
+    
+    public ArrayList<Topic> getTopics() {
+        return topics;
+    }
+    
+    public Date getDate() {
+        return date;
+    }
+}
