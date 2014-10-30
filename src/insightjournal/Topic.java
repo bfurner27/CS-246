@@ -16,12 +16,18 @@ public class Topic {
     private String topic;
     private List<String> synonyms;
     
-
+    /**
+     * 
+     */
     public Topic() {
         topic = null;
         synonyms = null;
     }
     
+    /**
+     * 
+     * @param lineOfTopics 
+     */
     public Topic(String lineOfTopics) {
         synonyms = new ArrayList<>();
         String[] firstSplit = lineOfTopics.split(":");
@@ -34,18 +40,34 @@ public class Topic {
     }
     //Getters and Setters
 
+    /**
+     * 
+     * @param Topic 
+     */
     public void setTopic(String Topic) {
         this.topic = Topic;
     }
 
+    /**
+     * 
+     * @param theSynonyms 
+     */
     public void setSynonyms(List<String> theSynonyms) {
         this.synonyms = theSynonyms;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getTopic() {
         return topic;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public List<String> getSynonyms() {
         return synonyms;
     }

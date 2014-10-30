@@ -15,11 +15,18 @@ public class Book {
     private String bookName;
     private int numChapters;
     
+    /**
+     * 
+     */
     public Book() {
         bookName = null;
         numChapters = 0;
     }
     
+    /**
+     * 
+     * @param book 
+     */
     public Book(String book) {
         
         if (book.equals("D&C")) {
@@ -38,19 +45,34 @@ public class Book {
         }
     }
 
+    /**
+     * 
+     * @param numChapters 
+     */
     public void setNumChapters(int numChapters) {
         this.numChapters = numChapters;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public int getNumChapters() {
         return numChapters;
     }
-         
+  
+    /**
+     * 
+     * @return 
+     */
     public String getBookName() {
         return bookName;
     }
     
-    
+    /**
+     * 
+     * @param theBookName 
+     */
     public void setBookName(String theBookName) {
         bookName = theBookName;
     }

@@ -64,37 +64,64 @@ public class InsightJournal {
     private List<Book> bookList; 
     private Index index;
 
+    /**
+     * 
+     * @return 
+     */
     public Reference getTheReference() {
         return theReference;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public Finder getTheFinder() {
         return theFinder;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public Docx getSendData() {
         return sendData;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public List<Entry> getEntries() {
         return entries;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public List<Topic> getTopicsList() {
         return topicsList;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public List<Book> getBookList() {
         return bookList;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public Index getIndex() {
         return index;
     }
     /**
      * Name runProcess
      * 
-     * @param files 
      */
     public void runProcess() {
         String propFile;
@@ -138,6 +165,10 @@ public class InsightJournal {
         }
     }
     
+    /**
+     * 
+     * @param filename from properties file
+     */
     public void readInTopics(String filename) {
         try {
             BufferedReader fin = new BufferedReader(new FileReader(filename));
@@ -251,6 +282,9 @@ public class InsightJournal {
         
     }
 
+    /**
+     * 
+     */
     public void displayandSearchContents() {
         // Output Scriptures that match
         System.out.println("Topic References");

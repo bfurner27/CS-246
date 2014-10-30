@@ -20,22 +20,39 @@ public class Date {
     private int day;
     private Calendar date;
 
+    /**
+     * 
+     * @return 
+     */
     public Calendar getDate() {
         return date;
     }
     
+    /**
+     * 
+     */
     public Date() {
         year = 0;
         month = 0;
         day = 0;
     }
     
+    /**
+     * 
+     * @param theYear
+     * @param theMonth
+     * @param theDay 
+     */
     public Date(int theYear, int theMonth, int theDay) {
         year = theYear;
         month = theMonth;
         day = theDay;
     }
     
+    /**
+     * 
+     * @param theDate 
+     */
     public Date(String theDate) {
         try {
             String[] tempStrings = theDate.split("-");
@@ -52,6 +69,9 @@ public class Date {
         }
     }
     
+    /**
+     * 
+     */
     public void dateFromComputer() {
         DateFormat compDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Calendar nDate = Calendar.getInstance();
@@ -77,33 +97,64 @@ public class Date {
         return formattedDate;
     }
     
+    /**
+     * 
+     * @return 
+     */
     public int getYear() {
         return year;
     }
     
+    /**
+     * 
+     * @return 
+     */
     public int getMonth() {
         return month;
     }
     
+    /**
+     * 
+     * @return 
+     */
     public int getDay() {
         return day;
     }
     
+    /**
+     * 
+     * @param theYear 
+     */
     public void setYear(int theYear) {
     }
     
+    /**
+     * 
+     * @param theMonth 
+     */
     public void setMonth(int theMonth) {
         
     }
     
+    /**
+     * 
+     * @param theDay 
+     */
     public void setDay(int theDay) {
         
     }
     
+    /**
+     * 
+     * @param date 
+     */
     private void convertToIntForm(String date) {
         
     }
     
+    /**
+     * 
+     */
     private void correctValue() {
         
     }

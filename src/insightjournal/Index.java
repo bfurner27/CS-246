@@ -14,21 +14,40 @@ import java.util.ArrayList;
 public class Index {
     private ArrayList<Reference> index;
     
+    /**
+     * 
+     */
     public Index () {
         
     }
     
+    /**
+     * 
+     * @param filename 
+     */
     public Index(String filename) {
         readIndex();
     }
+    
+    /**
+     * 
+     */
     public void readIndex() {
         
     }
     
+    /**
+     * 
+     * @return 
+     */
     public ArrayList<Reference> getIndex() {
         return index;
     } 
     
+    /**
+     * 
+     * @param references 
+     */
     public void setIndex(ArrayList<Reference> references) {
         index = references;
     }

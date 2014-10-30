@@ -13,31 +13,55 @@ public class Finder {
     private Index searchReference;
     private Reference valueToFind;
     
+    /**
+     * 
+     */
     public Finder () {
         
     }
     
+    /**
+     * 
+     * @param theSearchItem 
+     */
     public Finder(Reference theSearchItem) {
         
     }
     
+    /**
+     * 
+     * @param imput
+     * @param theSearchItem 
+     */
     public Finder(Index imput, Reference theSearchItem) {
         searchReference = imput;
         valueToFind = theSearchItem;
     }
     
+    /**
+     * 
+     */
     public void search() {
         
     }
     
+    /**
+     * 
+     */
     public void alert() {
         
     }
     
+    /**
+     * 
+     */
     public void report() {
         
     }
     
+    /**
+     * 
+     */
     public void readFile() {
     
     }

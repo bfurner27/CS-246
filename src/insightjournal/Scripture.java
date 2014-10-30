@@ -19,20 +19,43 @@ public class Scripture {
     private int startverse;
     private int endverse;
     
+    /**
+     * 
+     */
     public Scripture() {
     
     }
     
+    /**
+     * 
+     * @param theStandardWork
+     * @param theBookName
+     * @param theChapter 
+     */
     public Scripture(String theStandardWork, Book theBookName, int theChapter) {
         standardWork = theStandardWork;
         bookName = theBookName;
         chapter = theChapter;
     }
+    
+    /**
+     * 
+     * @param theBookName
+     * @param theChapter
+     * @param theVerses 
+     */
     public Scripture(Book theBookName, int theChapter, ArrayList<Integer> theVerses) {
         bookName = theBookName;
         chapter = theChapter;
     }
     
+    /**
+     * 
+     * @param theBookName
+     * @param theChapter
+     * @param startVerse
+     * @param endVerse 
+     */
     public Scripture(Book theBookName, int theChapter, int startVerse, int endVerse) {
         
         bookName = theBookName;
@@ -41,6 +64,10 @@ public class Scripture {
         endverse = endVerse;
     }
     
+    /**
+     * 
+     * @param theScripture 
+     */
     public Scripture(String theScripture) {
         String temp[];
         temp = theScripture.split(" ");
@@ -104,35 +131,64 @@ public class Scripture {
         }
     }
 
+    /**
+     * 
+     * @return 
+     */
     public int getStartverse() {
         return startverse;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public int getEndverse() {
         return endverse;
     }
     
+    /**
+     * 
+     * @return 
+     */
     public Book getBookName() {
         return bookName;
     }
     
+    /**
+     * 
+     * @return 
+     */
     public int getChapter() {
         return chapter;
     }
     
+    /**
+     * 
+     * @return 
+     */
     public String getStandardWork() {
         return standardWork;
     }
     
-    
+    /**
+     * 
+     */
     private void checkScriptureReference() {
         
     }
     
+    /**
+     * 
+     */
     private void findStandardWork() {
         
     }
     
+    /**
+     * 
+     * @param scriptureReference 
+     */
     private void convertScriptureReference(String scriptureReference) {
         
     }

@@ -15,7 +15,12 @@ import javafx.scene.control.TextField;
 public class Updater {
     public TextField textUpdate;
 
-    
+    /**
+     * 
+     * @param numEntries
+     * @param numScriptures
+     * @param numTopics 
+     */
     public void update(int numEntries, int numScriptures, int numTopics) {
         Platform.runLater(new Runnable() {
             @Override

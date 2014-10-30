@@ -20,6 +20,11 @@ public class ImportFileThread implements Runnable {
     private List<Entry> journalEntries;
     private Updater updater;
     
+    /**
+     * 
+     * @param theUpdater
+     * @param theFilename 
+     */
     ImportFileThread (Updater theUpdater, String theFilename) {
         updater = theUpdater;
         filename = theFilename;

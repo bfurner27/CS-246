@@ -17,10 +17,19 @@ public class Reference {
     private ArrayList<Topic> topics;
     private Date date;
     
+    /**
+     * 
+     */
     public Reference () {
         
     }
     
+    /**
+     * 
+     * @param theBooks
+     * @param theTopics
+     * @param theDate 
+     */
     public Reference (ArrayList<Book> theBooks,ArrayList<Topic> theTopics, 
                 Date theDate) {
         books = theBooks;
@@ -28,15 +37,26 @@ public class Reference {
         date = theDate;
     }
     
+    /**
+     * 
+     * @return 
+     */
     public ArrayList<Book> getScriptures() {
         return books;  
     }
     
-    
+    /**
+     * 
+     * @return 
+     */
     public ArrayList<Topic> getTopics() {
         return topics;
     }
     
+    /**
+     * 
+     * @return 
+     */
     public Date getDate() {
         return date;
     }
